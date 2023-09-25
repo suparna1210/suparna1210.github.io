@@ -1,299 +1,505 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <!-- Meta Tags -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suparna Srinivasan</title>
-
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css">
     <link rel="stylesheet" href="css/style.css">
-
-    <!-- box icons -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>Portfolio</title>
 </head>
-
 <body>
 
-    <!-- header design -->
-    <header class="header">
-        <a href="#" class="logo">Suparna.dev<span class="animate" style="--i:1;"></span></a>
+    <main>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-md">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <!-- <img src="img/logo.svg" alt="Logo"> -->
+                </a>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" tabindex="-1" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#home">Home</a>
+                        </li>
 
-        <div class="bx bx-menu" id="menu-icon"><span class="animate" style="--i:2;"></span></div>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#education">Experience</a>
+                        </li>
 
-        <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#education">Education</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
-
-            <span class="active-nav"></span>
-            <!-- <span class="animate" style="--i:2;"></span> -->
-        </nav>
-    </header>
-
-    <!-- home section design -->
-    <section class="home show-animate" id="home">
-        <div class="home-content">
-            <h1>Hi, I'm <span>Suparna Srinivasan</span><span class="animate" style="--i:2;"></span></h1>
-            <div class="text-animate">
-                <h3>Software Developer</h3>
-                <span class="animate" style="--i:3;"></span>
-            </div>
-            <p>A highly motivated and creative Software Developer with expertise in Machine Learning and Natural Language Processing. Proven success in creating innovative solutions and delivering high-quality projects across domains.
-                <span class="animate" style="--i:4;"></span>
-            </p>
-
-            <div class="btn-box">
-                <a href="#" class="btn">Hire Me</a>
-                <a href="#" class="btn">Let's Talk</a>
-                <span class="animate" style="--i:5;"></span>
-            </div>
-        </div>
-
-        <div class="home-sci">
-            <a href="#"><i class='bx bxl-facebook'></i></a>
-            <a href="#"><i class='bx bxl-twitter'></i></a>
-            <a href="#"><i class='bx bxl-linkedin'></i></a>
-            <span class="animate" style="--i:6;"></span>
-        </div>
-
-        <div class="home-imgHover"></div>
-        <span class="animate home-img" style="--i:7;"></span>
-    </section>
-
-    <!-- about section design -->
-    <section class="about" id="about">
-        <h2 class="heading">About <span>Me</span><span class="animate scroll" style="--i:1;"></span></h2>
-
-        <div class="about-img">
-            <img src="images/supu.jpg" alt="">
-            <span class="circle-spin"></span>
-            <span class="animate scroll" style="--i:2;"></span>
-        </div>
-
-        <div class="about-content">
-            <h3>Software Developer!<span class="animate scroll" style="--i:3;"></span></h3>
-            <p>A highly motivated and creative Software Developer with expertise in Machine Learning and Natural Language Processing. Proven success in creating innovative solutions and delivering high-quality projects across domains.
-                <span class="animate scroll" style="--i:4;"></span>
-            </p>
-
-            <div class="btn-box btns">
-                <a href="#" class="btn">Read More</a>
-                <span class="animate scroll" style="--i:5;"></span>
-            </div>
-        </div>
-    </section>
-
-    <!-- education section design -->
-    <section class="education" id="education">
-        <h2 class="heading">My <span>Journey</span><span class="animate scroll" style="--i:1;"></span></h2>
-
-        <div class="education-row">
-            <div class="education-column">
-                <h3 class="title">Education<span class="animate scroll" style="--i:2;"></span></h3>
-
-                <div class="education-box">
-                    <div class="education-content">
-                        <div class="content">
-                            <div class="year"><i class='bx bxs-calendar'></i> 2021 - Present</div>
-                            <h3>Northeastern University</h3>
-                            <p>Master of Science - Computer Science </p>
-                            <p>GPA: 3.4</p>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills">Skills</a>
+                        </li>
+                      
+                        <li class="nav-item">
+                            <a class="nav-link" href="#project">Projects</a>
+                        </li>
+                    </ul>
+                    <span class="navbar-text">
+                        <div class="social-icon">
+                            <a href="https://www.linkedin.com/in/suparna-srinivasan/" target="_blank"><img src="img/nav-icon1.svg" alt="Icon"></a>
+                            <a href="https://github.com/suparna1210" target="_blank"><img src="img/nav-icon2.svg" alt="Icon"></a>
+                            
                         </div>
-                    </div>
-
-                    <div class="education-content">
-                        <div class="content">
-                            <div class="year"><i class='bx bxs-calendar'></i> 2017 - 2021</div>
-                            <h3>Heriot-Watt University</h3>
-                            <p>Bachelor of Science - Computer Science (Hons) in Artificial Intelligence </p>
-                                <p>Degree Awarded: First Class / GPA: 4.0</p>
-                        </div>
-                    </div>
-
-
-                    <span class="animate scroll" style="--i:3;"></span>
+                        <button class="vvd" onclick="location.href='#connect';"><span>Let’s Connect</span></button>
+                    </span>
                 </div>
             </div>
+        </nav>
+        <!-- Navbar End -->
 
-            <div class="education-column">
-                <h3 class="title">Experience<span class="animate scroll" style="--i:5;"></span></h3>
+        <!-- Banner -->
+        <section class="banner" id="home">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-6 col-xl-7 wow fadeIn" data-wow-duration="1.5s">
+                        <!-- <span class="taglin">Welcome to my Portfolio</span> -->
+                        <h1>Hi, I'm Suparna Srinivasan </h1>
+                        <p><h1> A <span class="txt-rotate" data-period="1000" data-rotate='[ " Software Developer", "Machine Learning Engineer" ]'></span> </h1></p>
+                        <p><h1>based in Silicon Valley.</h1></p>
+                        <p>A highly motivated and creative Software Developer with expertise in Machine Learning and Natural Language Processing. Proven success in creating innovative solutions and delivering high-quality projects across domains.</p>
+                        <!-- <button onclick="location.href='#connect';">Resume</button> -->
+                        <br>
+                        <a href="SuparnaSResume.pdf" class="download-button" download="SuparnaSResume.pdf">
+                            Resume
+                        </a>
+                        
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-5 wow zoomIn" data-wow-duration="1.5s">
+                        <img src="img/header-img.svg" alt="Image">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Banner End -->
 
-                <div class="education-box">
-                    <div class="education-content">
-                        <div class="content">
-                            <div class="year"><i class='bx bxs-calendar'></i> June 2023 – September 2023</div>
-                            <h3>Summer Software Intern @ Encore Software Services </h3>
-                            <p>•	Led R&D on OCR solutions, evaluating AWS Textract, Apple's Vision API, and Google Vision API for accuracy and cost-efficiency.</p>
-                            <p>•	Developed NodeJS programs for precise text extraction and data segmentation, enhancing the accuracy of data extraction.</p>
-                                
+        
+
+
+        <!-- Skills -->
+        <section class="skill" id="skills">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="skill-bx wow zoomIn" data-wow-duration="1.5s">
+                            <h2>Skills</h2>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br> Lorem Ipsum has been the industry's standard dummy text.</p>
+                            <div class="owl-carousel owl-theme skill-slider">
+                                <div class="item">
+                                    <img src="img/meter1.svg" alt="Image">
+                                    <h5>Web Development</h5>
+                                </div>
+                                <div class="item">
+                                    <img src="img/meter2.svg" alt="Image">
+                                    <h5>Brand Identity</h5>
+                                </div>
+                                <div class="item">
+                                    <img src="img/meter3.svg" alt="Image">
+                                    <h5>Logo Design</h5>
+                                </div>
+                                <div class="item">
+                                    <img src="img/meter1.svg" alt="Image">
+                                    <h5>Web Development</h5>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    
-                        <div class="education-content">
-                            <div class="content">
-                                <div class="year"><i class='bx bxs-calendar'></i> May 2020 – May 2021</div>
-                                <h3>Application Developer @ Oasis Investment Company, Al Shirawi Group </h3>
-                                <p> Project: Petty Cash Mobile Application: An enterprise Finance App that allows Approvers to Approve or Reject incoming Advances and Claims submitted by company staff</p>
-                                <p>•	Expanded the organisation’s existing internal website onto a Mobile Platform; developed the app in cross-platform using Flutter (Android and iOS), and developed all phases of app from designing, through developing, testing and deployment
-                                <p>•	Designed the UI/UX mobile workflows and wireframes using Adobe XD, streamlining the user experience</p>
-                                <p>•	Worked with Senior Project Developer on multiple security levels - Mobile App Management (MAM) Solution and User-based authentication</p>
-                                <p>•	Successfully deployed on both Android and iOS devices for all staff in 45 companies</p>
+                </div>
+            </div>
+            <img class="sdf" src="img/color-sharp.png" alt="Image">
+        </section>
+        <!-- Skills End -->
+
+        <div class="timeline">
+            <div class="container">
+                <div class="text-box">
+                    <h2>Northeastern University</h2>
+                    <small>2021 - Present</small>
+                </div>
+            </div>
+        </div>
+        <!-- Projects -->
+        <section class="project" id="project">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 wow fadeIn" data-wow-duration="1.5s">
+                        <h2>Projects</h2>
+                        <br>
+                        <ul class="nav nav-pills mb-5 justify-content-center align-items-center id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Machine Learning</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">IOT</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Web Development</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent wow slideInUp" data-wow-duration="1.5s">
+
+                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                                <div class="row">
 
                                     
+                        <!-- Project -->
+                        <div class="col-12 col-sm-6 col-md-4 project" data-modal="spotrec-modal">
+                            <div class="proj-imgbx">
+                            <img src="img/project-img1.png" alt="Image">
+                            <div class="proj-txtx">
+                                <h4>SpotRec</h4>
+                                <span>2023</span>
+                            </div>
                             </div>
                         </div>
                         
-                            <div class="education-content">
-                                <div class="content">
-                                    <div class="year"><i class='bx bxs-calendar'></i> August 2019 – September 2019</div>
-                                    <h3>Summer Software Intern - Encore Software Services </h3>
-                                    <p>Project: Supplier Invoice Submission Portal System: An invoice management system that allows Suppliers to submit invoices and follow-up purchase orders and contracts.</p>
-                                    <p>•	Designed website UI using Microsoft ASP .NET MVC, C#, JavaScript and integrated data from Microsoft SQL Server using WebAPIs</p>
-                                    <p>•	Currently successfully deployed in 45 companies</p>
+                        <!-- Modal for SpotRec -->
+                        <div class="project-modal" id="spotrec-modal">
+                            <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <img src="img/project-img1.png" alt="Project Image">
+                            <h4>SpotRec</h4>
+                            <!-- <p>•	Built a sentiment-based music recommendation system using NLP and ML, enhancing user experience with mood-aligned song suggestions. </p>
+                            <p>•	Achieved 92.4% accuracy in sentiment prediction using a bidirectional LSTM model, while utilizing Spotipy for feature extraction and LightGBM for music classification.</p> 
+                                 -->
+                            </div>
+                        </div>
+                                               
+                    <div class="col-12 col-sm-6 col-md-4 project" data-modal="healthlink-modal">
+                        <div class="proj-imgbx">
+                        <img src="img/project-img1.png" alt="Image">
+                        <div class="proj-txtx">
+                            <h4>HealthLink</h4>
+                            <span>2023</span>
+                        </div>
+                        </div>
+                    </div>  
+                       <!-- Modal for healthlink -->
+                       <div class="project-modal" id="healthlink-modal">
+                        <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <img src="img/project-img1.png" alt="Project Image">
+                        <h4>HealthLink</h4>
+                        <!-- <p>•	Built a sentiment-based music recommendation system using NLP and ML, enhancing user experience with mood-aligned song suggestions. </p>
+                        <p>•	Achieved 92.4% accuracy in sentiment prediction using a bidirectional LSTM model, while utilizing Spotipy for feature extraction and LightGBM for music classification.</p> 
+                             -->
+                        </div>
+                    </div>                      
+                    
+                                    <div class="col-12 col-sm-6 col-md-4 project" id="BlackJackVision-modal">
+                                        <div class="proj-imgbx">
+                                            <img src="img/project-img1.png" alt="Image">
+                                            <div class="proj-txtx">
+                                                <h4>BlackJackVision</h4>
+                                                <span>2022</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                           <!-- Modal for blackjack -->
+                       <div class="project-modal" id="BlackJackVision-modal">
+                        <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <img src="img/project-img1.png" alt="Project Image">
+                        <h4>BlackJackVision</h4>
+                        <!-- <p>•	Built a sentiment-based music recommendation system using NLP and ML, enhancing user experience with mood-aligned song suggestions. </p>
+                        <p>•	Achieved 92.4% accuracy in sentiment prediction using a bidirectional LSTM model, while utilizing Spotipy for feature extraction and LightGBM for music classification.</p> 
+                             -->
+                        </div>
+                    </div> 
 
-                                        
+                                    <div class="col-12 col-sm-6 col-md-4 project" id="bigtriage-modal">
+                                        <div class="proj-imgbx">
+                                            <img src="img/project-img2.png" alt="Image">
+                                            <div class="proj-txtx">
+                                                <h4>Automated Bug Triaging</h4>
+                                                <span>2021</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                         <!-- Modal for bugtriage -->
+                       <div class="project-modal" id="bigtriage-modal">
+                        <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <img src="img/project-img1.png" alt="Project Image">
+                        <h4>SpotRec</h4>
+                        <!-- <p>•	Built a sentiment-based music recommendation system using NLP and ML, enhancing user experience with mood-aligned song suggestions. </p>
+                        <p>•	Achieved 92.4% accuracy in sentiment prediction using a bidirectional LSTM model, while utilizing Spotipy for feature extraction and LightGBM for music classification.</p> 
+                             -->
+                        </div>
+                    </div> 
+
+
+                                    <div class="col-12 col-sm-6 col-md-4 project" id="twitter-modal">
+                                        <div class="proj-imgbx">
+                                            <img src="img/project-img3.png" alt="Image">
+                                            <div class="proj-txtx">
+                                                <h4>Twitter Sentiment Analysis</h4>
+                                                <span>2021</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                         <!-- Modal for twitter -->
+                       <div class="project-modal" id="twitter-modal">
+                        <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <img src="img/project-img1.png" alt="Project Image">
+                        <h4>SpotRec</h4>
+                        <!-- <p>•	Built a sentiment-based music recommendation system using NLP and ML, enhancing user experience with mood-aligned song suggestions. </p>
+                        <p>•	Achieved 92.4% accuracy in sentiment prediction using a bidirectional LSTM model, while utilizing Spotipy for feature extraction and LightGBM for music classification.</p> 
+                             -->
+                        </div>
+                    </div> 
+                                    <div class="col-12 col-sm-6 col-md-4" id="food-modal">
+                                        <div class="proj-imgbx">
+                                            <img src="img/project-img1.png" alt="Image">
+                                            <div class="proj-txtx">
+                                                <h4>Automated Food Review Classification</h4>
+                                                <span>2021</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                            <!-- Modal for food -->
+                       <div class="project-modal" id="food-modal">
+                        <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <img src="img/project-img1.png" alt="Project Image">
+                        <h4>SpotRec</h4>
+                        <!-- <p>•	Built a sentiment-based music recommendation system using NLP and ML, enhancing user experience with mood-aligned song suggestions. </p>
+                        <p>•	Achieved 92.4% accuracy in sentiment prediction using a bidirectional LSTM model, while utilizing Spotipy for feature extraction and LightGBM for music classification.</p> 
+                             -->
+                        </div>
+                    </div> 
+                                    <div class="col-12 col-sm-6 col-md-4 project" id="traffic-modal">
+                                        <div class="proj-imgbx">
+                                            <img src="img/project-img1.png" alt="Image">
+                                            <div class="proj-txtx">
+                                                <h4>Traffic Sign Street Recognition</h4>
+                                                <span>2020</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                            <!-- Modal for traffic -->
+                       <div class="project-modal" id="traffic-modal">
+                        <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <img src="img/project-img1.png" alt="Project Image">
+                        <h4>SpotRec</h4>
+                        <!-- <p>•	Built a sentiment-based music recommendation system using NLP and ML, enhancing user experience with mood-aligned song suggestions. </p>
+                        <p>•	Achieved 92.4% accuracy in sentiment prediction using a bidirectional LSTM model, while utilizing Spotipy for feature extraction and LightGBM for music classification.</p> 
+                             -->
+                        </div>
+                    </div> 
+                                    <div class="col-12 col-sm-6 col-md-4 project" id="multi-modal">
+                                        <div class="proj-imgbx">
+                                            <img src="img/project-img1.png" alt="Image">
+                                            <div class="proj-txtx">
+                                                <h4>Multilayer Perceptron</h4>
+                                                <span>2020</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                                <!-- Modal for multi -->
+                       <div class="project-modal" id="multi-modal">
+                        <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <img src="img/project-img1.png" alt="Project Image">
+                        <h4>SpotRec</h4>
+                        <!-- <p>•	Built a sentiment-based music recommendation system using NLP and ML, enhancing user experience with mood-aligned song suggestions. </p>
+                        <p>•	Achieved 92.4% accuracy in sentiment prediction using a bidirectional LSTM model, while utilizing Spotipy for feature extraction and LightGBM for music classification.</p> 
+                             -->
+                        </div>
+                    </div> 
+
+                                    <div class="col-12 col-sm-6 col-md-4 project" id="tic-modal">
+                                        <div class="proj-imgbx">
+                                            <img src="img/project-img1.png" alt="Image">
+                                            <div class="proj-txtx">
+                                                <h4>Tic Tac Toe</h4>
+                                                <span>2019</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                        <!-- Modal for tic tac toe -->
+                       <div class="project-modal" id="tic-modal">
+                        <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <img src="img/project-img1.png" alt="Project Image">
+                        <h4>SpotRec</h4>
+                        <!-- <p>•	Built a sentiment-based music recommendation system using NLP and ML, enhancing user experience with mood-aligned song suggestions. </p>
+                        <p>•	Achieved 92.4% accuracy in sentiment prediction using a bidirectional LSTM model, while utilizing Spotipy for feature extraction and LightGBM for music classification.</p> 
+                             -->
+                        </div>
+                    </div>
                                 </div>
                             </div>
 
-                    <span class="animate scroll" style="--i:6;"></span>
-                </div>
-            </div>
-        </div>
-    </section>
+                            <div class="tab-pane fade show inactive" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                <div class="row">
+                                    <div class="col-12 col-sm-6 col-md-4 project" id="healthlink-modal">
+                                        <div class="proj-imgbx">
+                                            <img src="img/project-img1.png" alt="Image">
+                                            <div class="proj-txtx">
+                                                <h4>HealthLink</h4>
+                                                <span>2022</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-md-4">
+                                        <div class="proj-imgbx">
+                                            <img src="img/project-img2.png" alt="Image">
+                                            <div class="proj-txtx">
+                                                <h4>Homi</h4>
+                                                <span>2021</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-md-4">
+                                        <div class="proj-imgbx">
+                                            <img src="img/project-img3.png" alt="Image">
+                                            <div class="proj-txtx">
+                                                <h4>Mastermind </h4>
+                                                <span>2019</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
 
-    <!-- skills section design -->
-    <section class="skills" id="skills">
-        <h2 class="heading">My <span>Skills</span><span class="animate scroll" style="--i:1;"></span></h2>
-
-        <div class="skills-row">
-            <div class="skills-column">
-                <h3 class="title">Coding Skills<span class="animate scroll" style="--i:2;"></span></h3>
-
-                <div class="skills-box">
-                    <div class="skills-content">
-                        <div class="progress">
-                            <h3>HTML <span>90%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3>CSS <span>80%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3>JavaScript <span>65%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3>Python <span>75%</span></h3>
-                            <div class="bar"><span></span></div>
+                            <div class="tab-pane fade show inactive" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                                <div class="row">
+                                    <div class="col-12 col-sm-6 col-md-4">
+                                        <div class="proj-imgbx">
+                                            <img src="img/project-img1.png" alt="Image">
+                                            <div class="proj-txtx">
+                                                <h4>ElectroSearch</h4>
+                                                <span>2022</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-md-4">
+                                        <div class="proj-imgbx">
+                                            <img src="img/project-img2.png" alt="Image">
+                                            <div class="proj-txtx">
+                                                <h4>D3.js Dashboard</h4>
+                                                <span>2021</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-md-4">
+                                        <div class="proj-imgbx">
+                                            <img src="img/project-img3.png" alt="Image">
+                                            <div class="proj-txtx">
+                                                <h4>Steganography </h4>
+                                                <span>2019</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                          
                         </div>
                     </div>
-
-                    <span class="animate scroll" style="--i:3;"></span>
                 </div>
             </div>
 
-            <div class="skills-column">
-                <h3 class="title">Professional Skills<span class="animate scroll" style="--i:5;"></span></h3>
 
-                <div class="skills-box">
-                    <div class="skills-content">
-                        <div class="progress">
-                            <h3>Web Design <span>95%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
+            <img class="sdf2" src="img/color-sharp2.png" alt="Image">
+        </section>
+        <!-- Projects End -->
 
-                        <div class="progress">
-                            <h3>Web Development <span>67%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3>Graphic Design <span>85%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3>SEO Marketing <span>60%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
+        <!-- Get In Touch -->
+        <section class="contact" id="connect">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-6 wow zoomIn" data-wow-duration="1.5s">
+                        <img src="img/contact-img.svg" alt="Image">
                     </div>
-
-                    <span class="animate scroll" style="--i:6;"></span>
+                    <div class="col-12 col-md-6 wow fadeIn" data-wow-duration="1.5s">
+                        <h2>Get In Touch</h2>
+                        <form action="">
+                            <div class="row">
+                                <div class="col-12 col-sm-6 px-1">
+                                    <input type="text" placeholder="First Name" required>
+                                </div>
+                                <div class="col-12 col-sm-6 px-1">
+                                    <input type="text" placeholder="Last Name">
+                                </div>
+                                <div class="col-12 col-sm-6 px-1">
+                                    <input type="email" placeholder="Email Address" required>
+                                </div>
+                                <div class="col-12 col-sm-6 px-1">
+                                    <input type="tel" placeholder="Phone No." required>
+                                </div>
+                                <div class="col-12 px-1">
+                                    <textarea rows="6" placeholder="Message"></textarea>
+                                    <button><span>Send</span></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+        <!-- Get In Touch End -->
 
-    <!-- contact section design -->
-    <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me!</span><span class="animate scroll" style="--i:1;"></span></h2>
-
-        <form action="#">
-            <div class="input-box">
-                <div class="input-field">
-                    <input type="text" placeholder="Full Name" required>
-                    <span class="focus"></span>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-12">
+                        <!-- <div class="newsletter-bx wow slideInUp" data-wow-duration="1.5s">
+                            <div class="row">
+                                <div class="col-12 col-md-6 col-xl-5">
+                                    <h3>Subscribe to our Newsletter<br> & Never miss latest updates</h3>
+                                </div>
+                                <div class="col-12 col-md-6 col-xl-7">
+                                    <form action="">
+                                        <div class="new-emil-bx">
+                                            <input type="email" placeholder="Email Address">
+                                            <button>Submit</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                    <br>
+                    <div class="col-12 col-sm-6">
+                        <!-- <img src="img/logo.svg" alt="Logo"> -->
+                    </div>
+                    <div class="col-12 col-sm-6 text-center text-sm-end">
+                        <div class="social-icon">
+                            <a href="https://www.linkedin.com/in/suparna-srinivasan/" target="_blank"><img src="img/nav-icon1.svg" alt="Icon"></a>
+                            <a href="https://github.com/suparna1210" target="_blank"><img src="img/nav-icon2.svg" alt="Icon"></a>
+                            
+                        </div>
+                        <!-- <p>Copyright 2022. All Rights Reserved</p> -->
+                    </div>
                 </div>
-                <div class="input-field">
-                    <input type="text" placeholder="Email Address" required>
-                    <span class="focus"></span>
-                </div>
-
-                <span class="animate scroll" style="--i:3;"></span>
             </div>
+        </footer>
+        <!-- Footer End -->
 
-            <div class="input-box">
-                <div class="input-field">
-                    <input type="number" placeholder="Mobile Number" required>
-                    <span class="focus"></span>
-                </div>
-                <div class="input-field">
-                    <input type="text" placeholder="Email Subject" required>
-                    <span class="focus"></span>
-                </div>
+    </main>
 
-                <span class="animate scroll" style="--i:5;"></span>
-            </div>
-
-            <div class="textarea-field">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
-                <span class="focus"></span>
-
-                <span class="animate scroll" style="--i:7;"></span>
-            </div>
-
-            <div class="btn-box btns">
-                <button type="submit" class="btn">Submit</button>
-
-                <span class="animate scroll" style="--i:9;"></span>
-            </div>
-        </form>
-    </section>
-
-    <!-- footer design -->
-    <footer class="footer">
-        <div class="footer-text">
-            <p>Copyright &copy; 2023 by Codehal | All Rights Reserved.</p>
-
-            <span class="animate scroll" style="--i:1;"></span>
-        </div>
-
-        <div class="footer-iconTop">
-            <a href="#"><i class='bx bx-up-arrow-alt'></i></a>
-
-            <span class="animate scroll" style="--i:3;"></span>
-        </div>
-    </footer>
-
-
-    <script src="js/script.js"></script>
+    <!-- JS Files -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
-
 </html>
