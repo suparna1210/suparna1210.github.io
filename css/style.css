@@ -1480,7 +1480,7 @@ hr.solid {
   }
   
   .episode__number {
-    font-size: 10vw;
+    font-size: 8vw;
     font-weight: 600;
     padding: 10px 0;
     position: sticky;
@@ -1499,7 +1499,7 @@ hr.solid {
   }
   
   .episode__content .title {
-    font-weight: 600
+    font-weight: 450
   }
   
   .episode__content .story {
