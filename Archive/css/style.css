@@ -844,7 +844,7 @@ button#pills-contact-tab {
     position: relative;
     width: 300px;
     float: left;
-    text-align: left;
+    text-align: right;
   }
   
   .direction-r {
@@ -856,16 +856,17 @@ button#pills-contact-tab {
   .flag-wrapper {
     position: relative;
     display: inline-block;
+    
     text-align: center;
   }
   
   .flag {
     position: relative;
-    display: list-item;
+    display: inline;
     background: rgb(49, 0, 88);
     padding: 6px 10px;
     border-radius: 5px;
-
+    
     font-weight: 600;
     text-align: left;
   }
